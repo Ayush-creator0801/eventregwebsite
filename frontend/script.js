@@ -16,7 +16,7 @@ event: document.getElementById("event").value
 
 try {
 
-const res = await fetch("https://beamish-khapse-19de5c.netlify.app/register", {
+const res = await fetch("https://eventregwebsite-1.onrender.com/register", {
 method: "POST",
 headers: { "Content-Type": "application/json" },
 body: JSON.stringify(data)
