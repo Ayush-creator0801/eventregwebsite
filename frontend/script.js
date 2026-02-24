@@ -17,7 +17,7 @@ event: document.getElementById("event").value
 try {
 
 const res = await fetch("https://eventregwebsite-1.onrender.com/register", {
-method: "POST",
+method: ["GET", "POST", "OPTIONS"],
 headers: { "Content-Type": "application/json" },
 body: JSON.stringify(data)
 });
