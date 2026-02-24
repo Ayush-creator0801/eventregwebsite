@@ -9,11 +9,12 @@ const app = express();
 app.use(cors({
   origin: [
     "http://127.0.0.1:5500",
-    "https://beamish-khapse-19de5c.netlify.app"
+    "https://bucolic-mermaid-fec406.netlify.app"
   ],
   methods: ["GET", "POST", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"],
+  allowedHeaders: ["Content-Type", "Authorization"]
 }));
+
 app.use(express.json());
 app.options("*", cors());
 // MongoDB Connection
